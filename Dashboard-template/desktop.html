@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/91a1f38d53.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-heading">
+            <h2>ACME</h2>
+        </div>
+        <div class="sidebar-list">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li class="active"><a href="#"aria-expanded="false" >Dashboard</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+<div id="content">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand"><button type="button" id="sidebarCollapse" class="btn btn-light "><i class="fa-solid fa-bars-staggered"></i></button></a>
+        <form class="ms-auto">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search transactions, invoices or help">
+        </form>
+        
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bell"></i></a></li>
+            <li class="nav-item dropdown"><a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img  src="images\profile-pic-01.jpg">
+                John Doe
+            </a><ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My profile</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-receipt"></i> Billing</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a></li>
+              </ul></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="overview">
+    <h3>Overview</h3>
+    <button>Add funds  +</button>
+</div>
+
+<div class="charts ">
+
+    <div class="graph shadow-lg">
+        <div class="card-header">
+            <h6>Statistics</h6>
+           
+          </div>
+          <div class="card-body">
+            <img src="images\unnamed.png" alt="..." class="img-graph" >
+          </div>
+    </div>
+    <div class="profile-card shadow-lg">
+        <div class="profile-header">
+           <img src="images\profile-pic-01.jpg" alt="" id="profile-name">
+           <h6>Nick Herasimenka</h6>
+           <p >United States</p>
+           <div class="cta" >
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-facebook" ></i>
+            <i class="fa-brands fa-linkedin" ></i>
+            <i class="fa-brands fa-whatsapp"></i>
+    </div>
+          </div>
+          <hr>
+     <div class="user-card">
+            <h6>Our Users</h6>
+            
+            <div class="user-list">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="users">
+                         <div class="users-img">
+                            <img src="images\profile-pic-03.jpg" alt="">
+                         </div>
+                       <div class="users-name">
+                        <h6>Drew James</h6>
+                        <p>United States</p>
+                       </div>
+                       <div class="users-tel">
+                        <p>Mobile Phone: 8716528527</p>
+                       </div>
+     </div>
+    </li>
+                    <li class="list-group-item">
+                        <div class="users">
+                         <div class="users-img">
+                            <img src="images\profile-pic-02.jpg" alt="">
+                         </div>
+                       <div class="users-name">
+                        <h6>Bavid Kames</h6>
+                        <p>India</p>
+                       </div>
+                       <div class="users-tel">
+                        <p>Mobile Phone: 8716528527</p>
+                       </div></div></li>
+                    <li class="list-group-item">
+                        <div class="users">
+                         <div class="users-img">
+                            <img src="images\profile-pic-04.jpg" alt="">
+                         </div>
+                       <div class="users-name">
+                        <h6>Dora </h6>
+                        <p>Germany</p>
+                       </div>
+                       <div class="users-tel">
+                        <p>Mobile Phone: 8716528527</p>
+                       </div></div></li>
+                    
+                </ul>
+            </div>
+          </div>
+    </div>
+
+<div class="pie shadow-lg">
+    <div class="card-header">
+        <h6>Sales Distribution</h6>
+      </div>
+      <div class="card-body">
+        <img src="images\pie-300x221.png" alt="..." class="img-graph" >
+      </div>
+</div>
+
+<div class="video shadow-lg">
+    <h6>Product Video</h6>
+    <video src="images\production ID_5092427.mp4"></video>
+    </div>
+
+
+<div class="table shadow-lg">
+    <h6>Referrer</h6>
+    <table class="table table-hover">
+        <thead style="background-color:#F5F6FA;">
+        <tr>
+          <th scope="col" style="width: 52px;height: 18px;Color:#A3A6B4;">Locations</th>
+          <th scope="col" style="width: 52px;height: 18px;Color:#A3A6B4;">Views</th>
+          <th scope="col"style="width: 52px;height: 18px;Color:#A3A6B4;">Sales</th>
+          <th scope="col"style="width: 52px;height: 18px;Color:#A3A6B4;">Conversions</th>
+          <th scope="col"style="width: 52px;height: 18px;Color:#A3A6B4;">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr style="color:#4D4F5C;">
+    <th scope="row">google.com</th>
+    <td>3746</td>
+    <td>752</td>
+    <td>43%</td>
+    <td>$19,291</td>
+  </tr>
+  <tr>
+    <th scope="row">facebook.com</th>
+    <td>8126</td>
+    <td>728</td>
+    <td>32%</td>
+    <td>$29,291</td>
+  </tr>
+  <tr>
+    <th scope="row">twitter.com</th>
+    <td>8836</td>
+    <td>694</td>
+    <td>32%</td>
+    <td>$23,291</td>
+  </tr>
+  <tr>
+    <th scope="row">linkedin.com</th>
+    <td>8836</td>
+    <td>694</td>
+    <td>32%</td>
+    <td>$23,291</td>
+  </tr>
+  <tr>
+    <th scope="row">instagram.com</th>
+    <td>8836</td>
+    <td>694</td>
+    <td>32%</td>
+    <td>$23,291</td>
+  </tr>
+  <tr>
+    <th scope="row "><a href="#" style="a">Show more</a></th>
+  </tr>
+
+</tbody>
+</table>
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+</div><!--Chart div-->
+<hr class="footer">
+
+<footer>
+    &copy;Made By Adrin
+</footer>
+
+
+
+
+
+</div>
+
+
+</div><!--Wrappers div-->
+   <script src="app.js"></script> 
+</body>
+</html>
